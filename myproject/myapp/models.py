@@ -9,3 +9,10 @@ class Student(models.Model):
 
     class Meta:
         db_table = "Student"
+
+class Friends(models.Model):
+    Name = models.CharField(max_length=20)
+    FavNo = models.IntegerField()
+
+    class Meta:
+        db_table = "Friends"
